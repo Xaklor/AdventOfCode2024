@@ -4,7 +4,6 @@
 #include <sstream>
 using namespace std;
 
-bool dampener_check(vector<int> report, int idx, bool asc, bool desc);
 bool verify(vector<int>, int, bool);
 
 int main() {
