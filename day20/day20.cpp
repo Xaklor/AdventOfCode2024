@@ -14,9 +14,8 @@ int main() {
     }
 
     int times[grid.size()][grid[0].size()] {};
-    point start = { 89, 49 };
-    point end   = { 99, 31 };
-    point p = start;
+    point p   = { 89, 49 };
+    point end = { 99, 31 };
     int steps = 1;
     while(!(p.x == end.x && p.y == end.y)) {
         times[p.x][p.y] = steps;
@@ -29,7 +28,6 @@ int main() {
     times[end.x][end.y] = steps;
 
     long total = 0;
-    p = start;
     // range of 2 is p1, range of 20 is p2
     const int CHEAT_RANGE = 20;
     for(int i = 0; i < grid.size(); i++) {
